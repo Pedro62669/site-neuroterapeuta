@@ -1,0 +1,16 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.botao {
+  display: inline-block;
+  padding: 8px 16px;
+  background: var(--cor2);
+  border-radius: 10px;
+  font: 400 1rem/1 "Poppins", sans-serif;
+}
+@media (max-width: 900px) {
+  .container {
+    padding: 0px 20px;
+  }
+}

@@ -1,0 +1,25 @@
+.headerbg {
+  background-color: white;
+  padding: 15px 0px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.header ul{
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.header-zap{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+@media (max-width: 900px) {
+  .header ul{
+    display: none;
+  }
+}

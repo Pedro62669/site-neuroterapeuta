@@ -1,0 +1,13 @@
+.intro {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 35px 0px 0px 0px;
+  gap: 32px;
+}
+@media (max-width: 900px) {
+  .intro {
+    grid-template-columns: 1fr;
+    padding: 35px 20px;
+  }
+}

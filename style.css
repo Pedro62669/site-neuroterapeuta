@@ -1,0 +1,7 @@
+@import "./CSS/global/global.css";
+@import "./CSS/utilitário/cor.css";
+@import "./CSS/utilitário/tipografia.css";
+@import "./CSS/utilitário/componetes.css";
+@import "./CSS/global/header.css";
+@import "./CSS/home/intro.css";
+@import "./CSS/home/sobre_mim.css";

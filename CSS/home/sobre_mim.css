@@ -1,0 +1,15 @@
+.sobre_mim_bg {
+  background: var(--cor6);
+  padding: 40px 0px;
+}
+.sobre_mim {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+@media (max-width: 900px) {
+  .sobre_mim {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
