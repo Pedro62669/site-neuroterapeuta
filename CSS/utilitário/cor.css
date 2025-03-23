@@ -1,12 +1,12 @@
 :root {
-  --cor1: #f18dec;
-  --cor2: #ef807f;
-  --cor3: #988686;
-  --cor4: #7ff0e2;
-  --cor5: #7ff0a3;
-  --cor6: #f6f6f6;
-  --cor7: #7B7B7B;
-  --cor8:#1c1118;
+  --cor1: #6a9cbf; /* Azul pastel mais escuro para melhor contraste em fundo branco */
+  --cor2: #d3b8d6; /* Lilás pastel - relacionado à intuição e calma mental */
+  --cor3: #a9c7b6; /* Verde pastel - associado à cura e equilíbrio */
+  --cor4: #f0e6d8; /* Bege pastel - transmite conforto e acolhimento */
+  --cor5: #e2c2c6; /* Rosa pastel - representa compaixão e cuidado */
+  --cor6: #f6f6f6; /* Branco suave - mantido para espaços de respiro visual */
+  --cor7: #7b7b7b; /* Cinza - mantido para textos secundários */
+  --cor8: #3a4b53; /* Azul escuro suave - para textos principais, menos agressivo que o preto */
 }
 .cor1 {
   color: var(--cor1);
@@ -30,6 +30,5 @@
   color: var(--cor7);
 }
 .cor8 {
- color: var(--cor8);
+  color: var(--cor8);
 }
-

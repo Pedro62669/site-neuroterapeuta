@@ -1,0 +1,87 @@
+.sessoes-bg {
+  background: var(--cor6);
+  padding: 60px 0;
+}
+
+.sessoes {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.sessoes-img {
+  text-align: center;
+}
+
+.sessoes-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.sessoes-info {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.sessoes-info h2 {
+  margin-bottom: 20px;
+}
+
+.sessoes-info p {
+  margin-bottom: 32px;
+}
+
+@media (max-width: 800px) {
+  .sessoes {
+    grid-template-columns: 1fr;
+  }
+
+  .sessoes-img {
+    grid-row: 2;
+  }
+
+  .sessoes-info {
+    text-align: center;
+  }
+}
+
+/* Benefícios da Terapia Online */
+.beneficios-terapia-online {
+  margin-top: 60px;
+}
+
+.beneficios-terapia-online h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.beneficios-terapia-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.beneficio-card {
+  background: white;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.beneficio-card h3 {
+  margin-bottom: 16px;
+  color: var(--cor-8);
+}
+
+.beneficio-card p {
+  color: var(--cor-7);
+}
+
+@media (max-width: 800px) {
+  .beneficios-terapia-online h2 {
+    font-size: 1.5rem;
+  }
+}

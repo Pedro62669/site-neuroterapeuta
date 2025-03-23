@@ -5,3 +5,9 @@
 @import "./CSS/global/header.css";
 @import "./CSS/home/intro.css";
 @import "./CSS/home/sobre_mim.css";
+@import "./CSS/home/beneficios.css";
+@import "./CSS/home/especialidades.css";
+@import "./CSS/home/sessoes.css";
+@import "./CSS/home/depoimentos.css";
+@import "./CSS/home/contato.css";
+@import "./CSS/global/footer.css";

@@ -4,13 +4,28 @@
 }
 .botao {
   display: inline-block;
-  padding: 8px 16px;
+  padding: 12px 28px;
   background: var(--cor2);
-  border-radius: 10px;
-  font: 400 1rem/1 "Poppins", sans-serif;
+  border-radius: 12px;
+  font: 500 1rem/1 "Poppins", sans-serif;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+  transition: all 0.4s ease;
+}
+.botao:hover {
+  background: var(--cor1);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
 }
 @media (max-width: 900px) {
   .container {
     padding: 0px 20px;
+  }
+  .botao {
+    padding: 10px 20px;
+    font-size: 0.9rem;
   }
 }

@@ -1,0 +1,72 @@
+.especialidades-bg {
+  padding: 80px 0;
+}
+
+.especialidades {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.especialidades h2 {
+  text-align: center;
+}
+
+.especialidades-lista {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  width: 100%;
+}
+
+.especialidade-item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: var(--cor6);
+  transition: transform 0.3s;
+}
+
+.especialidade-item:hover {
+  transform: translateY(-5px);
+}
+
+.especialidade-item img {
+  width: 80px;
+  height: 80px;
+}
+
+.especialidade-item h3 {
+  margin-bottom: 8px;
+}
+
+.especialidade-item p {
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .especialidades-bg {
+    padding: 60px 0;
+  }
+
+  .especialidades {
+    gap: 40px;
+  }
+
+  .especialidades-lista {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .especialidades-lista {
+    grid-template-columns: 1fr;
+  }
+
+  .especialidade-item {
+    padding: 20px;
+  }
+}

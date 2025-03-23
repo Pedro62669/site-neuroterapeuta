@@ -2,11 +2,25 @@
   background: var(--cor6);
   padding: 40px 0px;
 }
+.sobre_mim img {
+  border-radius: 20px;
+}
+.sobre_mim h2 {
+  font: 200 1.5rem/1 "Poppins", sans-serif;
+  padding-top: 10px;
+}
 .sobre_mim {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
 }
+.sobre_info {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
 @media (max-width: 900px) {
   .sobre_mim {
     grid-template-columns: 1fr;

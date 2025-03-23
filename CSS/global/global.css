@@ -1,5 +1,11 @@
 /* reset */
-body, h1, h2, h3, h4, li, ul{
+body,
+h1,
+h2,
+h3,
+h4,
+li,
+ul {
   margin: 0;
   padding: 0;
 }
@@ -11,6 +17,53 @@ img {
 a {
   text-decoration: none;
 }
-ul, li {
+ul,
+li {
   list-style: none;
+}
+
+/* Mensagens de feedback */
+.mensagem {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 16px 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  color: var(--cor8);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  z-index: 9999;
+  transform: translateX(120%);
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.mensagem.visivel {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.mensagem.sucesso {
+  background-color: var(--cor3);
+}
+
+.mensagem.erro {
+  background-color: var(--cor5);
+}
+
+/* Animações */
+.beneficio-item,
+.especialidade-item,
+.depoimento-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.beneficio-item.animado,
+.especialidade-item.animado,
+.depoimento-item.animado {
+  opacity: 1;
+  transform: translateY(0);
 }

@@ -5,9 +5,43 @@
   padding: 35px 0px 0px 0px;
   gap: 32px;
 }
+.intro-bg {
+  background-image: url("../../img/sofa-white.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.intro_img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.intro_info {
+  max-width: 100%;
+}
+
 @media (max-width: 900px) {
   .intro {
     grid-template-columns: 1fr;
-    padding: 35px 20px;
+    padding: 35px 20px 0px 20px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .intro_img {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .intro_img img {
+    max-width: 80%;
+  }
+
+  .intro_info {
+    text-align: center;
+    margin-bottom: 20px;
   }
 }

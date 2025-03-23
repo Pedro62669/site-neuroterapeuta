@@ -1,6 +1,10 @@
 .headerbg {
   background-color: white;
   padding: 15px 0px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 .header {
   display: flex;
@@ -8,18 +12,98 @@
   flex-wrap: wrap;
   align-items: center;
 }
-.header ul{
+.header ul {
   display: flex;
   gap: 32px;
   flex-wrap: wrap;
 }
-.header-zap{
+.header ul li a {
+  color: var(--cor8);
+  position: relative;
+  padding: 5px 0;
+  transition: color 0.4s ease;
+}
+.header ul li a:hover {
+  color: var(--cor2);
+}
+.header ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--cor2);
+  transition: width 0.4s ease;
+}
+.header ul li a:hover::after {
+  width: 100%;
+}
+.header-zap {
   display: flex;
   gap: 8px;
   align-items: center;
 }
+.header-zap p {
+  transition: color 0.4s ease;
+}
+.header-zap:hover p {
+  color: var(--cor2);
+}
 @media (max-width: 900px) {
-  .header ul{
+  .header ul {
     display: none;
   }
+}
+
+.text-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4.5px 0;
+}
+
+.logo-title {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 1.44rem;
+  color: var(--cor8);
+  margin: 4.5px 0;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.logo-subtitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 0.765rem;
+  color: var(--cor1);
+  margin: 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.logo-decoration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 2.7px 0;
+}
+
+.logo-line {
+  display: inline-block;
+  width: 27px;
+  height: 1px;
+  background-color: var(--cor1);
+}
+
+.logo-dot {
+  display: inline-block;
+  width: 3.6px;
+  height: 3.6px;
+  border-radius: 50%;
+  background-color: var(--cor1);
+  margin: 0 5.4px;
 }

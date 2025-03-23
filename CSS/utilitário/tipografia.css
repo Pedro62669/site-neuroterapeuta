@@ -1,5 +1,5 @@
 .fonte_titulo {
-  font: 600 3rem/1.2 "Poppins", sans-serif;
+  font: 600 2.5rem/1.2 "Poppins", sans-serif;
   letter-spacing: 0.5px;
 }
 .fonte_paragrafo {
@@ -9,19 +9,22 @@
   font: 500 0.8rem/1 "Poppins", sans-serif;
 }
 .fonte_zap {
-  font: 500 0.9rem/1 "Poppins", sans-serif;
+  font: 500 0.8rem/1 "Poppins", sans-serif;
 }
 .fonte_intro {
   font: 400 1rem/1 "Poppins", sans-serif;
 }
 .fonte_subtitulo {
-  font: 400 1.2rem/1 "Poppins", sans-serif;
+  font: 400 1.5rem/1 "Poppins", sans-serif;
 }
-@media (max-width: 900px ){
+@media (max-width: 900px) {
   .fonte_titulo {
     font-size: 2rem;
   }
   .fonte_paragrafo {
     font-size: 0.8rem;
+  }
+  .fonte_zap_mobile {
+    display: none;
   }
 }
